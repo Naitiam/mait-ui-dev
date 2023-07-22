@@ -91,25 +91,6 @@ importers:
         specifier: ^1.8.5
         version: 1.8.5(typescript@5.0.2)
 
-  examples:
-    dependencies:
-      vue:
-        specifier: ^3.3.4
-        version: 3.3.4
-    devDependencies:
-      '@vitejs/plugin-vue':
-        specifier: ^4.2.3
-        version: 4.2.3(vite@4.4.5)(vue@3.3.4)
-      typescript:
-        specifier: ^5.0.2
-        version: 5.0.2
-      vite:
-        specifier: ^4.4.5
-        version: 4.4.5
-      vue-tsc:
-        specifier: ^1.8.5
-        version: 1.8.5(typescript@5.0.2)
-
   packages/mait-ui:
     dependencies:
       vue:
@@ -134,12 +115,6 @@ importers:
       vitepress:
         specifier: 1.0.0-beta.5
         version: 1.0.0-beta.5(@algolia/client-search@4.19.1)(@types/node@20.4.2)(search-insights@2.7.0)
-
-  vitepress-starter:
-    devDependencies:
-      vitepress:
-        specifier: 1.0.0-beta.5
-        version: 1.0.0-beta.5(@algolia/client-search@4.19.1)(search-insights@2.7.0)
 
 packages:
 
@@ -4549,41 +4524,6 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.4.0-beta.3:
-    resolution: {integrity: sha512-IC/thYTvArOFRJ4qvvudnu4KKZOVc+gduS3I9OfC5SbP/Rf4kkP7z6Of2QpKeOSVqwIK24khW6VOUmVD/0yzSQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.18.15
-      postcss: 8.4.26
-      rollup: 3.26.3
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
   /vite@4.4.0-beta.3(@types/node@20.4.2):
     resolution: {integrity: sha512-IC/thYTvArOFRJ4qvvudnu4KKZOVc+gduS3I9OfC5SbP/Rf4kkP7z6Of2QpKeOSVqwIK24khW6VOUmVD/0yzSQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -4613,41 +4553,6 @@ packages:
         optional: true
     dependencies:
       '@types/node': 20.4.2
-      esbuild: 0.18.15
-      postcss: 8.4.26
-      rollup: 3.26.3
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
-  /vite@4.4.5:
-    resolution: {integrity: sha512-4m5kEtAWHYr0O1Fu7rZp64CfO1PsRGZlD3TAB32UmQlpd7qg15VF7ROqGN5CyqN7HFuwr7ICNM2+fDWRqFEKaA==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
       esbuild: 0.18.15
       postcss: 8.4.26
       rollup: 3.26.3
@@ -4707,50 +4612,6 @@ packages:
       minisearch: 6.1.0
       shiki: 0.14.3
       vite: 4.4.0-beta.3(@types/node@20.4.2)
-      vue: 3.3.4
-    transitivePeerDependencies:
-      - '@algolia/client-search'
-      - '@types/node'
-      - '@types/react'
-      - '@vue/composition-api'
-      - async-validator
-      - axios
-      - change-case
-      - drauu
-      - fuse.js
-      - idb-keyval
-      - jwt-decode
-      - less
-      - lightningcss
-      - nprogress
-      - qrcode
-      - react
-      - react-dom
-      - sass
-      - search-insights
-      - sortablejs
-      - stylus
-      - sugarss
-      - terser
-      - universal-cookie
-    dev: true
-
-  /vitepress@1.0.0-beta.5(@algolia/client-search@4.19.1)(search-insights@2.7.0):
-    resolution: {integrity: sha512-/RjqqRsSEKkzF6HhK5e5Ij+bZ7ETb9jNCRRgIMm10gJ+ZLC3D1OqkE465lEqCeJUgt2HZ6jmWjDqIBfrJSpv7w==}
-    hasBin: true
-    dependencies:
-      '@docsearch/css': 3.5.1
-      '@docsearch/js': 3.5.1(@algolia/client-search@4.19.1)(search-insights@2.7.0)
-      '@vitejs/plugin-vue': 4.2.3(vite@4.4.0-beta.3)(vue@3.3.4)
-      '@vue/devtools-api': 6.5.0
-      '@vueuse/core': 10.2.1(vue@3.3.4)
-      '@vueuse/integrations': 10.2.1(focus-trap@7.5.2)(vue@3.3.4)
-      body-scroll-lock: 4.0.0-beta.0
-      focus-trap: 7.5.2
-      mark.js: 8.11.1
-      minisearch: 6.1.0
-      shiki: 0.14.3
-      vite: 4.4.0-beta.3
       vue: 3.3.4
     transitivePeerDependencies:
       - '@algolia/client-search'
