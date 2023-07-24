@@ -6,7 +6,7 @@
     "target": "es2020", // 遵循es2020版本
     "module": "commonjs", // 打包模块类型commonjs
     "skipLibCheck": true, // 跳过类库检测
-    "esModuleInterop": true,  // 支持es6, commonj s模块
+    "esModuleInterop": true, // 支持es6, commonj s模块
     "moduleResolution": "Node", // 按照node模块来解析
     "lib": ["esnext", "dom"], // 编译时使用库
     "rootDir": ".",
@@ -15,5 +15,5 @@
       "@/*": ["packages/components/src/*"],
       "utils/*": ["packages/utils/*"]
     }
-  },
+  }
 }
