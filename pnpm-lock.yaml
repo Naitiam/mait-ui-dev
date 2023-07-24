@@ -91,7 +91,7 @@ importers:
         specifier: ^1.8.5
         version: 1.8.5(typescript@5.0.2)
 
-  packages/mait-ui:
+  demo:
     dependencies:
       vue:
         specifier: ^3.3.4
@@ -109,6 +109,12 @@ importers:
       vue-tsc:
         specifier: ^1.8.5
         version: 1.8.5(typescript@5.0.2)
+
+  packages/components: {}
+
+  packages/theme-chalk: {}
+
+  packages/utils: {}
 
   site:
     devDependencies:

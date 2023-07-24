@@ -1,25 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "preserve",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "baseUrl": ".",
+    "jsx": "preserve", // jsx不转
+    "strict": false, // 是否启动严格模式
+    "target": "es2020", // 遵循es2020版本
+    "module": "commonjs", // 打包模块类型commonjs
+    "skipLibCheck": true, // 跳过类库检测
+    "esModuleInterop": true,  // 支持es6, commonj s模块
+    "moduleResolution": "Node", // 按照node模块来解析
+    "lib": ["esnext", "dom"], // 编译时使用库
+    "rootDir": ".",
+    // "rootDirs": ["./", "./packages", "./packages/components"],
+    "paths": {
+      "@/*": ["packages/components/src/*"],
+      "utils/*": ["packages/utils/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
 }

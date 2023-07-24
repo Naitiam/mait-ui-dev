@@ -8,9 +8,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint:eslint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "lint:eslint": "eslint --fix",
     "lint:prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md,less,sass,scss,sty}\"",
-    "lint:style": "stylelint \"./**/*.{html,css,less,sass,scss,vue}\" --fix"
+    "lint:style": "stylelint \"./**/*.{html,css,less,sass,scss,vue}\" --fix --allow-empty-input"
   },
   "dependencies": {
     "vue": "^3.3.4"

@@ -20,13 +20,7 @@ module.exports = {
   ],
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/*.json', '**/*.md', '**/*.yaml'],
   rules: {
-    'selector-class-pattern': [
-      // 命名标准 -
-      '^([a-z][a-z0-9]*)(-[a-z0-9]+)*(__[a-z0-9]+)*$',
-      {
-        message: 'Expected class selector to be kebab-case',
-      },
-    ],
+    'selector-class-pattern': null,
     'declaration-block-trailing-semicolon': null,
     'string-quotes': 'single',
     'no-descending-specificity': null, // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器

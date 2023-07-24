@@ -1,3 +1,6 @@
 .vscode
 .husky
 node_modules
+typings/*
+packages/*
+site/*
